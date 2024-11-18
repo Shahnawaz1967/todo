@@ -71,5 +71,20 @@ A **full-stack MERN application** to create, manage, and organize your projects 
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/todo-manager.git
-cd todo-manager
+git clone https://github.com/Shahnawaz1967/todo.git
+
+cd server
+
+npm i
+
+npm run start
+
+then back
+
+cd ..
+cd client
+
+npm i
+
+npm start
+
