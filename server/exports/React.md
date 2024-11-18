@@ -1,10 +1,10 @@
 
 # React
 
-**Summary:** 1 / 1 todos completed.
+**Summary:** 0 / 1 todos completed.
 
 ## Pending Todos
-
+- [ ] nextjs
 
 ## Completed Todos
-- [x] nextjs
+
