@@ -72,8 +72,7 @@ A **full-stack MERN application** to create, manage, and organize your projects 
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/Shahnawaz1967/todo.git
-git frontend deployed Link:https://todoapp-hatio-92068d.netlify.app/
-
+git frontend deployed Link:https://todo-app-hatio1.netlify.app/
 cd server
 
 npm i
