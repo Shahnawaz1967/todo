@@ -67,14 +67,18 @@ A **full-stack MERN application** to create, manage, and organize your projects 
 
 ---
 
+## **Deployment Link** 
+  frontend deployed Link:https://todo-app-hatio1.netlify.app/ 
+  
+  backend deployed Link:https://todo-waxj.onrender.com
+
+  API Documentaion :Working
 ## **Setup Instructions** ⚙️
 
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/Shahnawaz1967/todo.git
-frontend deployed Link:https://todo-app-hatio1.netlify.app/
-backend deployed Link:https://todo-waxj.onrender.com
-API Documentaion :Working
+
 cd server
 
 npm i
