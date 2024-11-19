@@ -1,6 +1,4 @@
 import React from "react";
-import { MdWorkOutline } from "react-icons/md";
-import { LuListTodo, LuGithub } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -18,15 +16,12 @@ function Home() {
 
   return (
     <>
-      <div className="landing-page h-[85vh] flex flex-col items-center justify-between p-6 bg-gray-100">
+      <div className="landing-page min-h-screen flex flex-col items-center justify-between p-6 bg-gray-100">
         {/* Hero Section */}
         <div className="hero flex flex-col items-center text-center py-16">
-          <h1 className="text-4xl text-custom-blue font-bold mb-4">
-            Focus Forward & Maintain Discipline
-          </h1>
-          <p className="text-lg mb-6 text-gray-500">
+          <h1 className="text-4xl text-custom-blue font-bold mb-6">
             Organize your work, keep track of tasks, and connect effortlessly.
-          </p>
+          </h1>
           <button
             onClick={handleGetStarted}
             className="text-lg font-semibold px-6 py-2 shadow hover:bg-emerald-950 hover:text-white transition bg-emerald-600 rounded-lg text-black"
@@ -36,55 +31,69 @@ function Home() {
         </div>
 
         {/* Features Section */}
-        <div className="features hidden md:grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 w-full max-w-5xl">
-          {/* Feature 1 */}
-          <div className="feature-card flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <MdWorkOutline className="text-5xl text-indigo-500 mb-4 bg-gray-200 p-3 rounded-full border-2 border-indigo-500" />
-            <h3 className="text-lg font-bold text-gray-800 mb-3">
-              Efficient Project Management
+        <div className="features grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 w-full max-w-7xl">
+          {/* Feature Cards */}
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-blue-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Plan Your Day
             </h3>
-            <p className="text-gray-600">
-              Simplify your workflow and keep your projects organized with ease.
+            <p className="text-gray-600 text-base">
+              Set daily goals and prioritize tasks to maximize productivity.
             </p>
           </div>
 
-          {/* Feature 2 */}
-          <div className="feature-card flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <LuGithub className="text-5xl text-green-500 mb-4 bg-gray-200 p-3 rounded-full border-2 border-green-500" />
-            <h3 className="text-lg font-bold text-gray-800 mb-3">
-              GitHub Integration
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-green-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Organize Tasks
             </h3>
-            <p className="text-gray-600">
-              Easily sync your tasks and export them to GitHub for seamless
-              collaboration.
+            <p className="text-gray-600 text-base">
+              Group tasks into categories and create a system that works for you.
             </p>
           </div>
 
-          {/* Feature 3 */}
-          <div className="feature-card flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <LuListTodo className="text-5xl text-purple-500 mb-4 bg-gray-200 p-3 rounded-full border-2 border-purple-500" />
-            <h3 className="text-lg font-bold text-gray-800 mb-3">
-              Stay on Top of Your Tasks
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-purple-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Collaborate Seamlessly
             </h3>
-            <p className="text-gray-600">
-              Keep track of every task effortlessly with intuitive to-do tools.
+            <p className="text-gray-600 text-base">
+              Share tasks and projects with teammates for better collaboration.
             </p>
           </div>
-        </div>
 
-        {/* For smaller screens, show only icons */}
-        <div className="flex md:hidden justify-between gap-6 mt-4">
-          <MdWorkOutline className="text-5xl text-blue-600 bg-white p-2 border-2 rounded-full border-gray-200" />
-          <LuListTodo className="text-5xl text-green-500 bg-white p-2 border-2 rounded-full border-gray-200" />
-          <LuGithub className="text-5xl text-purple-500 bg-white p-2 border-2 rounded-full border-gray-200" />
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-yellow-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Track Progress
+            </h3>
+            <p className="text-gray-600 text-base">
+              Monitor task completion and stay on top of deadlines effortlessly.
+            </p>
+          </div>
+
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-red-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Set Reminders
+            </h3>
+            <p className="text-gray-600 text-base">
+              Never miss a task with timely notifications and alerts.
+            </p>
+          </div>
+
+          <div className="feature-card flex flex-col items-center text-center p-10 bg-teal-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Achieve Goals
+            </h3>
+            <p className="text-gray-600 text-base">
+              Break down big goals into smaller tasks and celebrate achievements.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Footer Section */}
       <div className="text-sm text-center mt-5 text-gray-600 mb-3 md:mb-0">
-         Todos-Web-App © {new Date().getFullYear()}. All rights reserved. Helping you organize and track your goals.
+        Todos-Web-App © All rights reserved. Helping
+        you organize and track your goals.
       </div>
-
     </>
   );
 }
