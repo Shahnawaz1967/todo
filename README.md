@@ -11,7 +11,8 @@ A **full-stack MERN application** to create, manage, and organize your projects 
 - **Login**: Access your account securely.  
 - **Protected Routes**: Ensure tasks are only accessible to logged-in users.
 - 
-  ![Home Page Without Login](https://github.com/user-attachments/assets/aedff3d0-4fea-4924-9db2-5a13b2a87d39)
+
+![2024-11-21 (1)](https://github.com/user-attachments/assets/265a6c40-2502-46d6-a4ad-b60b89d95431)
 
 
 ### **2. Project Management**
